@@ -32,7 +32,7 @@ View additional screenshots in the [screenshots directory](screenshots/):
 
 Watch a quick demo of VulnScan in action:
 
-[![VulnScan Demo](https://cdn.loom.com/sessions/thumbnails/8204a02077d84e448c0ee87be12e6d9c-with-play.gif)](https://www.loom.com/share/8204a02077d84e448c0ee87be12e6d9c?sid=6ad1f0df-5720-426b-bfbc-581533e2ac6a)
+https://www.loom.com/share/8204a02077d84e448c0ee87be12e6d9c?sid=242eeaf7-714b-4296-875f-42d9079e360c
 
 In this demo, I show:
 - Setting up and running the application
