@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Shield Base -->
+    <path d="M256 16L45 128V256C45 379.712 133.888 497.312 256 496C378.112 497.312 467 379.712 467 256V128L256 16Z" 
+          fill="#2d2d2d" stroke="#00ff9d" stroke-width="16"/>
+    
+    <!-- Network Nodes -->
+    <circle cx="256" cy="256" r="24" fill="#00ff9d"/>
+    <circle cx="176" cy="196" r="16" fill="#00ff9d"/>
+    <circle cx="336" cy="196" r="16" fill="#00ff9d"/>
+    <circle cx="176" cy="316" r="16" fill="#00ff9d"/>
+    <circle cx="336" cy="316" r="16" fill="#00ff9d"/>
+    
+    <!-- Connection Lines -->
+    <line x1="256" y1="232" x2="176" y2="196" stroke="#00ff9d" stroke-width="4"/>
+    <line x1="256" y1="232" x2="336" y2="196" stroke="#00ff9d" stroke-width="4"/>
+    <line x1="256" y1="280" x2="176" y2="316" stroke="#00ff9d" stroke-width="4"/>
+    <line x1="256" y1="280" x2="336" y2="316" stroke="#00ff9d" stroke-width="4"/>
+    
+    <!-- Scanning Effect -->
+    <path d="M256 136C194.144 136 144 186.144 144 248C144 309.856 194.144 360 256 360C317.856 360 368 309.856 368 248C368 186.144 317.856 136 256 136ZM256 344C203.072 344 160 300.928 160 248C160 195.072 203.072 152 256 152C308.928 152 352 195.072 352 248C352 300.928 308.928 344 256 344Z"
+          fill="#00ff9d" fill-opacity="0.3"/>
+    
+    <!-- Radar Sweep Animation -->
+    <path d="M256 168V328M168 248H344" 
+          stroke="#00ff9d" stroke-width="2" stroke-dasharray="4 4">
+        <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 256 248"
+            to="360 256 248"
+            dur="4s"
+            repeatCount="indefinite"/>
+    </path>
+</svg>

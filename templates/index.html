@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="scan-form">
+        <div class="warning-box">
+            <h4>Important Security Notice</h4>
+            <p>Before using this vulnerability scanner, please be aware of the following:</p>
+            <ul>
+                <li>Only scan systems that you own or have explicit permission to test</li>
+                <li>Unauthorized scanning may be illegal and could result in legal consequences</li>
+                <li>Some networks and ISPs may block scanning activities</li>
+                <li>Consider using test environments for learning and development</li>
+            </ul>
+            <p>By proceeding, you acknowledge that you have the necessary permissions to scan the target system.</p>
+        </div>
+
+        <form id="scanForm">
+            <div class="form-group">
+                <label for="target">Target IP or Domain:</label>
+                <input type="text" class="form-control" id="target" name="target" 
+                       placeholder="Enter IP address or domain (e.g., 192.168.1.1)" required>
+            </div>
+            <button type="submit" class="btn-accent">Start Scan</button>
+        </form>
+    </div>
+
+    <div id="results" style="display: none;">
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <p>Scanning target for vulnerabilities... Please wait.</p>
+        </div>
+        <div id="scanResults"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Previous Reports</h2>
+        </div>
+        <div class="card-body">
+            <h3>Scan Reports</h3>
+            <div id="reportsList">
+                <!-- Reports will be loaded here -->
+            </div>
+            <div class="mt-3">
+                <button type="button" class="btn-danger" onclick="clearReports()">Clear All Reports</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
